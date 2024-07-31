@@ -1,43 +1,64 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import Portal from "@/components/Portal";
+import { menuItems } from "@/utils/util";
+
+const menuVariants = {
+  hidden: { translateX: "260px", opacity: 0 },
+  visible: { translateX: 0, opacity: 1 },
+  exit: { translateX: "260px", opacity: 0 },
+};
 
 function Menu({ toggle, setIsToggle }) {
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  }, [toggle]);
+
   return (
-    <>
-      <div
-        className={`fixed top-0 bottom-0 right-0 z-50 p-7 w-60 bg-[var(--secondary)] transition-all duration-300 ${
-          toggle ? "translate-x-0" : "translate-x-[260px]"
-        }`}
-      >
-        <div className="flex items-center justify-center">
-          <IoMdCloseCircleOutline onClick={() => setIsToggle(false)} className="text-white w-7 h-7 mb-5" />
-        </div>
-        <ul className="flex flex-col items-center gap-7 text-white">
-          <li>
-            <Link href="/about">About us</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/useCases">Use Cases</Link>
-          </li>
-          <li>
-            <Link href="/pricing">Pricing</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-        </ul>
-      </div>
-      <div
-        onClick={() => setIsToggle(false)}
-        className={`fixed inset-0 bg-black/10 backdrop-blur-sm ${
-          toggle ? "opacity-100 z-10" : "opacity-0 -z-10"
-        }`}
-      ></div>
-    </>
+    <Portal toggle={toggle}>
+      <AnimatePresence>
+        {toggle && (
+          <motion.div
+            key="menu"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={menuVariants}
+            transition={{
+              duration: 0.5,
+            }}
+            className={`lg:hidden fixed top-0 right-0 bottom-0 p-7 w-60 z-50 bg-[var(--secondary)]`}
+          >
+            <div className="flex items-center justify-center">
+              <IoMdCloseCircleOutline
+                onClick={() => setIsToggle(false)}
+                className="text-white w-7 h-7 mb-5"
+              />
+            </div>
+            <ul className="flex flex-col items-center gap-7 text-white">
+              {menuItems.map((item, index) => (
+                <motion.li key={index} initial={{opacity : 0}} animate={{opacity : 1}} transition={{duration : 2}}>
+                  <Link href={item.href}>{item.title}</Link>
+                </motion.li>
+              ))}
+            </ul>
+
+            <div className="mt-4 flex items-center justify-center">
+              <button className="p-3 border border-[var(--primary)] rounded-xl hover:bg-[var(--primary)] transition-all text-white hover:bg-white hover:text-black">
+                Request a quote
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </Portal>
   );
 }
 

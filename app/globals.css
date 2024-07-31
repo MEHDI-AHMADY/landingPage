@@ -7,6 +7,11 @@
     font-family: "spaceGrotesk";
     src: url(../public/fonts/SpaceGrotesk-Regular.ttf) format('truetype');
   }
+
+  @font-face {
+    font-family: "spaceMedium";
+    src: url(../public/fonts/SpaceGrotesk-Medium.ttf) format('truetype');
+  }
 }
 
 :root {
@@ -30,8 +35,78 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .customSticky {
+    @apply sticky top-0 right-0 left-0 py-5 backdrop-blur-2xl
+  }
 }
+
+@media screen and (min-width : 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 14px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (min-width : 1024px) {
+  h1 {
+    font-size: 64px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+}
+

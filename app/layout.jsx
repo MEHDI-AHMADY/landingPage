@@ -8,7 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-spaceGrotesk">{children}</body>
+      <body className="font-spaceGrotesk text-black">
+        {children}
+        <div id="portal-root"></div>
+      </body>
+
     </html>
   );
 }

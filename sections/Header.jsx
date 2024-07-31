@@ -1,18 +1,18 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Menu from "@/components/Menu";
 import Link from "next/link";
+import { menuItems } from "@/utils/util";
 
 function Header() {
   const [isToggle, setIsToggle] = useState(false);
 
-  const showMenuHandler = () => {
-    setIsToggle(!isToggle)
-  };
+  const showMenuHandler = () => setIsToggle(!isToggle);
+
 
   return (
-    <header className="w-full mt-[61px] mb-[70px] sticky top-4 right-0 left-0 z-50">
+    <header className={`w-full pt-[61px] customSticky ${isToggle ? 'z-0' : 'z-40'}`}>
       <div className="container px-4 sm:px-0 flex items-center justify-between">
         <div>
           <Image src="/images/Logo.png" alt="logo" width={219} height={36} />
@@ -21,27 +21,17 @@ function Header() {
         <div className="flex items-center gap-10">
           <nav className="hidden lg:block">
             <ul className="hidden lg:flex lg:items-center lg:gap-10">
-              <li>
-                <Link href="/about">About us</Link>
+              {menuItems.map((item , index ) => (
+              <li key={index}>
+                <Link href={item.href}>{item.title}</Link>
               </li>
-              <li>
-                <Link href="/services">Services</Link>
-              </li>
-              <li>
-                <Link href="/useCases">Use Cases</Link>
-              </li>
-              <li>
-                <Link href="/pricing">Pricing</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
+              ))}
             </ul>
           </nav>
 
-          <Menu className="block lg:hidden" toggle={isToggle} setIsToggle={setIsToggle} />
+          <Menu toggle={isToggle} setIsToggle={setIsToggle} />
 
-          <button className="hidden lg:block px-[35px] py-5 border border-black rounded-xl hover:bg-[var(--primary)] transition-all">
+          <button className="hidden lg:block px-[35px] py-5 border border-black rounded-xl hover:bg-[var(--primary)] transition-all text-black">
             Request a quote
           </button>
 

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -18,7 +19,8 @@ module.exports = {
     },
     extend: {
       fontFamily : {
-        "spaceGrotesk" : "spaceGrotesk"
+        "spaceGrotesk" : "spaceGrotesk",
+        "spaceMedium" : "spaceMedium"
       }
     },
   },
