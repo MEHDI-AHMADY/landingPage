@@ -4,17 +4,30 @@ import { createPortal } from "react-dom";
 
 export default function Portal({ toggle , children }) {
   const [mounted, setMounted] = useState(false);
+  const [show ,setShow] = useState(toggle);
 
   useEffect(() => {
-    setMounted(true);
-    return () => setMounted(false);
-  }, []);
+    if(toggle) {
+      setShow(true);
+    }else {
+      const timer = setTimeout(() => setShow(false), 500);
+      return () => clearTimeout(timer);
+    }
+  }, [toggle]);
+
+  useEffect(() => {
+    if(show){
+      setMounted(true)
+    }else {
+      setMounted(false)
+    }
+  } , [show])
 
 
   return mounted ?  createPortal(
     <div
-      className={`bg-black/10 backdrop-blur-sm ${
-        toggle ? "fixed inset-0 opacity-100 z-10" : "opacity-0 -z-10"
+      className={`fixed inset-0 bg-black/10 backdrop-blur-sm ${
+        show ? "opacity-100 z-10" : "opacity-0 -z-10"
       }`}
     >{children}</div>,
     document.getElementById("portal-root")

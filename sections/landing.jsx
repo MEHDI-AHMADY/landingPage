@@ -39,6 +39,7 @@ export default function Landing() {
           width={600}
           height={515}
           alt="illustration"
+          priority
         />
       </div>
     </div>
