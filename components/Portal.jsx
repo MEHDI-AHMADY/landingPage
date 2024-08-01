@@ -10,8 +10,7 @@ export default function Portal({ toggle , children }) {
     if(toggle) {
       setShow(true);
     }else {
-      const timer = setTimeout(() => setShow(false), 500);
-      return () => clearTimeout(timer);
+      setTimeout(() => setShow(false), 500);
     }
   }, [toggle]);
 

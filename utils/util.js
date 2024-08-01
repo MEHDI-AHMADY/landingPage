@@ -18,4 +18,13 @@ let menuItems = [
     {title : "Blog" , href : '/blog'},
 ]
 
-export { companyItems , menuItems }
+let servicesItems = [
+    {id : 1 , title : 'Search engine' , title2 : 'optimization' , src : '/images/services1.png' , txtBg : 'bg-[var(--primary)]' , more : 'Learn more' , bgColor : 'bg-[var(--gray)]' , arrow : '/images/icon.png' , aspectRatio : 'aspect-[1.23 / 1]' , txtColor : 'text-black'} ,
+    {id : 2 , title : 'Pay-per-click' , title2 : 'advertising' , src : '/images/services2.png' , txtBg : 'bg-[var(--gray)]' , more : 'Learn more' , bgColor : 'bg-[var(--primary)]' , arrow : '/images/icon.png' , aspectRatio : 'aspect-[1.42 / 1]' , txtColor : 'text-black'} ,
+    {id : 3 , title : 'Social Media' , title2 : 'Marketing' , src : '/images/services3.png' , txtBg : 'bg-[var(--gray)]' , more : 'Learn more' , bgColor : 'bg-[var(--secondary)]' , arrow : '/images/icon (1).png' , aspectRatio : 'aspect-square' , txtColor : 'text-white'} ,
+    {id : 4 , title : 'Email' , title2 : 'Marketing' , src : '/images/services4.png' , txtBg : 'bg-[var(--primary)]' , more : 'Learn more' , bgColor : 'bg-[var(--gray)]' , arrow : '/images/icon.png' , aspectRatio : 'aspect-[1.09 / 1]' , txtColor : 'text-black'} ,
+    {id : 5 , title : 'Content' , title2 : 'Creation' , src : '/images/services5.png' , txtBg : 'bg-[var(--gray)]' , more : 'Learn more' , bgColor : 'bg-[var(--primary)]' , arrow : '/images/icon.png' , aspectRatio : 'aspect-[1.07 / 1]' , txtColor : 'text-black'} ,
+    {id : 6 , title : 'Analytics and' , title2 : 'Tracking' , src : '/images/services6.png' , txtBg : 'bg-[var(--primary)]' , more : 'Learn more' , bgColor : 'bg-[var(--secondary)]' , arrow : '/images/icon (1).png' , aspectRatio : 'aspect-[1.23 /1]' , txtColor : 'text-white'} ,
+]
+
+export { companyItems , menuItems , servicesItems }
