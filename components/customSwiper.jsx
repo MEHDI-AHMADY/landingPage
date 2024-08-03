@@ -17,7 +17,7 @@ export default function CustomSwiper({
   autoplay,
   destroyOnLargeScreen,
 }) {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+  const [isLargeScreen, setIsLargeScreen] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {

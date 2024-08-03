@@ -5,7 +5,7 @@ import StudioCard from "@/components/StudioCard";
 import CustomSwiper from "@/components/customSwiper";
 import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { motion, wrap } from "framer-motion";
+import { motion } from "framer-motion";
 
 const wrapper = {
   hidden: { opacity: 0 },

@@ -14,4 +14,6 @@ import React , {forwardRef} from 'react'
   )
 })
 
+StudioCard.displayName = "StudioCard"
+
 export default StudioCard
