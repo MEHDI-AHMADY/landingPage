@@ -55,7 +55,7 @@ h4 {
 p {
   font-size: 16px;
   line-height: 24px;
-}
+} 
 
 @layer utilities {
   .text-balance {
@@ -110,5 +110,10 @@ p {
   p {
     font-size: 18px;
   }
+
+  .studioCard {
+    height: auto !important;
+  }
+
 }
 

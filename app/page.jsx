@@ -4,6 +4,7 @@ import Companies from "@/sections/companies";
 import ServicesSec from "@/sections/ServiceSec";
 import Happy from "@/sections/Happy";
 import Studios from "@/sections/Studios";
+import WorkProcess from "@/sections/WorkProcess";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ServicesSec />
         <Happy />
         <Studios />
+        <WorkProcess />
       </main>
     </>
   );
