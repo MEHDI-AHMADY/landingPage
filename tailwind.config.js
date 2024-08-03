@@ -21,6 +21,9 @@ module.exports = {
       fontFamily : {
         "spaceGrotesk" : "spaceGrotesk",
         "spaceMedium" : "spaceMedium"
+      },
+      boxShadow : {
+        "custom" : '0 5px 0 0 #191A23',
       }
     },
   },

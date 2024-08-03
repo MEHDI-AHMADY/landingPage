@@ -1,8 +1,8 @@
-import React , {forwardRef} from 'react'
+import React from 'react'
 
- const StudioCard = forwardRef(({ txt , btn , index , maxHeight} , ref) => {
+ function StudioCard ({ txt , btn , index , maxHeight} ) {
   return (
-    <div ref={ref} style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }} className={`studioCard flex flex-col gap-5 py-[42px] px-[50px] lg:pr-16 lg:py-0 ${index === 0 ? "lg:pl-0" : 'lg:pl-16'} bg-[var(--secondary)] rounded-[45px] lg:rounded-none`}>
+    <div style={{ height: maxHeight ? `${maxHeight}px` : 'auto' }} className={`studioCard flex flex-col gap-5 py-[42px] px-[50px] lg:pr-16 lg:py-0 ${index === 0 ? "lg:pl-0" : 'lg:pl-16'} bg-[var(--secondary)] rounded-[45px] lg:rounded-none`}>
         
       <p className='text-white'>{txt}</p>
 
@@ -12,8 +12,7 @@ import React , {forwardRef} from 'react'
       </div>
     </div>
   )
-})
+}
 
-StudioCard.displayName = "StudioCard"
 
 export default StudioCard
