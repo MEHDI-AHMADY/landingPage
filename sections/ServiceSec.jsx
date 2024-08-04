@@ -38,7 +38,7 @@ export default function ServicesSec() {
             variants={paragraphsWrapper}
           >
             <motion.p className="text-center sm:text-start" variants={paragraphs}>
-            At our digital marketing agency, we offer a range of services to <br className="hidden 2xl:inline-block"/> help businesses grow and succeed online. These services include:
+            At our digital marketing agency, we offer a range of services to <br className="hidden xl:inline-block"/> help businesses grow and succeed online. These services include:
             </motion.p>
           </motion.div>
         </div>

@@ -57,6 +57,61 @@ p {
   line-height: 24px;
 } 
 
+.clipPath {
+  position: relative;
+}
+
+.clipPath::after,
+    .clipPath::before {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      left: 34px;
+      width: 40px;
+      height: 20px;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+
+    .clipPath::before {
+      background: var(--primary);
+      transform: translateY(1px);
+    }
+
+    .clipPath::after {
+      background: var(--secondary);
+      transform: translateY(-1px);
+    }
+
+    .custom-pagination .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      background: url('/images/Vector.png') no-repeat center;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .custom-pagination .swiper-pagination-bullet-active {
+      background: url('/images/activeVector.png') no-repeat center;
+    }
+
+    .linkedinIcon {
+      width: 30px;
+      height: 30px;
+      background: url('/images/linkedinIcon.png') no-repeat center;
+    }
+
+    .facebookIcon {
+      width: 30px;
+      height: 30px;
+      background: url('/images/facebook.png') no-repeat center;
+    }
+
+    .twitterIcon {
+      width: 30px;
+      height: 30px;
+      background: url('/images/twitter.png') no-repeat center;
+    }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

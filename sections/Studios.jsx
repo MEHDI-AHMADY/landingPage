@@ -40,7 +40,7 @@ export default function Studios() {
 
         <motion.p variants={title} className="text-center sm:text-start">
           Explore Real-Life Examples of Our Proven Digital Marketing
-          <br className="hidden 2xl:inline-block" /> Success through Our Case
+          <br className="hidden xl:inline-block" /> Success through Our Case
           Studies
         </motion.p>
       </motion.div>

@@ -5,6 +5,10 @@ import ServicesSec from "@/sections/ServiceSec";
 import Happy from "@/sections/Happy";
 import Studios from "@/sections/Studios";
 import WorkProcess from "@/sections/WorkProcess";
+import Team from "@/sections/Team";
+import Testimonial from "@/sections/Testimonial";
+import ContactUs from "@/sections/ContactUs";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +21,11 @@ export default function Home() {
         <Happy />
         <Studios />
         <WorkProcess />
+        <Team />
+        <Testimonial />
+        <ContactUs />
       </main>
+      <Footer />
     </>
   );
 }

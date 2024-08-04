@@ -112,11 +112,122 @@ let studioCards = [
 ];
 
 let accordionItems = [
-  {id : 1 , title : "Consultation" , txt : "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."},
-  {id : 2 , title : "Research and Strategy Development" , txt : "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."},
-  {id : 3 , title : "Implementation" , txt : "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."},
-  {id : 4 , title : "Monitoring and Optimization" , txt : "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."},
-  {id : 5 , title : "Reporting and Communication" , txt : "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."},
-  {id : 6 , title : "Continual Improvement" , txt : "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."},
-]
-export { companyItems, menuItems, servicesItems, studioCards , accordionItems };
+  {
+    id: 1,
+    title: "Consultation",
+    txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  {
+    id: 2,
+    title: "Research and Strategy Development",
+    txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  {
+    id: 3,
+    title: "Implementation",
+    txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  {
+    id: 4,
+    title: "Monitoring and Optimization",
+    txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  {
+    id: 5,
+    title: "Reporting and Communication",
+    txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  {
+    id: 6,
+    title: "Continual Improvement",
+    txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+];
+
+let teamMembers = [
+  {
+    id: 1,
+    src: "/images/team1.png",
+    name: "John Smith",
+    job: "CEO and Founder",
+    desc: "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
+  },
+  {
+    id: 2,
+    src: "/images/team2.png",
+    name: "Jane Doe",
+    job: "Director of Operations",
+    desc: "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
+  },
+  {
+    id: 3,
+    src: "/images/team3.png",
+    name: "Michael Brown",
+    job: "Senior SEO Specialist",
+    desc: "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+  },
+  {
+    id: 4,
+    src: "/images/team4.png",
+    name: "Emily Johnson",
+    job: "PPC Manager",
+    desc: "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+  },
+  {
+    id: 5,
+    src: "/images/team5.png",
+    name: "Brian Williams",
+    job: "Social Media Specialist",
+    desc: "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
+  },
+  {
+    id: 6,
+    src: "/images/team6.png",
+    name: "Sarah Kim",
+    job: "Content Creator",
+    desc: `2+ years of experience in writing and editing
+Skilled in creating compelling, SEO-optimized content for various industries`,
+  },
+];
+
+let testimonialItems = [
+  {
+    id: 1,
+    txt: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    name: "John Smith",
+    job: "Marketing Director at XYZ Corp",
+  },
+  {
+    id: 2,
+    txt: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    name: "John Smith",
+    job: "Marketing Director at XYZ Corp",
+  },
+  {
+    id: 3,
+    txt: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    name: "John Smith",
+    job: "Marketing Director at XYZ Corp",
+  },
+  {
+    id: 4,
+    txt: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    name: "John Smith",
+    job: "Marketing Director at XYZ Corp",
+  },
+  {
+    id: 5,
+    txt: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+    name: "John Smith",
+    job: "Marketing Director at XYZ Corp",
+  },
+];
+export {
+  companyItems,
+  menuItems,
+  servicesItems,
+  studioCards,
+  accordionItems,
+  teamMembers,
+  testimonialItems,
+};

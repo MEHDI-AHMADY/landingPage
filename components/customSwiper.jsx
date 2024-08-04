@@ -14,7 +14,9 @@ export default function CustomSwiper({
   children,
   navigation,
   pagination,
+  loop,
   autoplay,
+  centeredSlides,
   destroyOnLargeScreen,
 }) {
   const [isLargeScreen, setIsLargeScreen] = useState(null);
@@ -33,7 +35,7 @@ export default function CustomSwiper({
   }, []);
 
   if (destroyOnLargeScreen && isLargeScreen) {
-    return null; 
+    return null;
   }
 
   return (
@@ -43,8 +45,16 @@ export default function CustomSwiper({
       slidesPerView={slidesPerView}
       breakpoints={breakPoints}
       autoplay={autoplay}
-      navigation={navigation}
-      pagination={pagination}
+      loop={loop}
+      navigation={{
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      }}
+      pagination={{
+        clickable: true,
+        el: ".custom-pagination",
+      }}
+      centeredSlides={centeredSlides}
     >
       {children}
     </Swiper>

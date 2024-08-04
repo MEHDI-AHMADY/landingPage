@@ -6,7 +6,7 @@ import AccordionItem from "@/components/AccordionItem";
 
 const wrapper = {
   hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { duration: 1 } },
+  show: { opacity: 1, transition: { duration: 1 , staggerChildren : 0.7 } },
 };
 
 const title = {
@@ -48,11 +48,11 @@ export default function WorkProcess() {
         
       </motion.div>
 
-      <div className="flex flex-col gap-[30px]">
+      <motion.div initial="hidden" whileInView="show" variants={wrapper} className="flex flex-col gap-[30px]">
         {accordionItems.map((item , index) => (
-          <AccordionItem key={item.id} {...item} open={open} handleOpen={handleOpen}/>
+          <AccordionItem key={item.id} {...item} open={open} handleOpen={handleOpen} index={index}/>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

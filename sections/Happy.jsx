@@ -23,9 +23,9 @@ export default function Happy() {
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
-          <button className="py-5 px-[35px] border border-black rounded-xl w-full sm:w-[264px] bg-[var(--secondary)] text-white hover:bg-white hover:text-black transition-all">
+          <motion.button whileHover={{scale : 1.05 , boxShadow : '0px 0px 11px 1px #000000' , textShadow : '3px 3px 2px #0092CE'}} className="py-5 px-[35px] border border-black rounded-xl w-full sm:w-[264px] bg-[var(--secondary)] text-white hover:bg-white hover:text-black transition-all">
             Get your free proposal
-          </button>
+          </motion.button>
         </div>
 
         <div className="hidden lg:block flex-1">
