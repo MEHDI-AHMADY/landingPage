@@ -115,31 +115,37 @@ let accordionItems = [
   {
     id: 1,
     title: "Consultation",
+    title2 : '',
     txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
   {
     id: 2,
-    title: "Research and Strategy Development",
+    title: "Research and Strategy",
+    title2 : ' Development',
     txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
   {
     id: 3,
     title: "Implementation",
+    title2 : '',
     txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
   {
     id: 4,
-    title: "Monitoring and Optimization",
+    title: "Monitoring and",
+    title2 : ' Optimization',
     txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
   {
     id: 5,
-    title: "Reporting and Communication",
+    title: "Reporting and",
+    title2 : ' Communication',
     txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
   {
     id: 6,
     title: "Continual Improvement",
+    title2 : "",
     txt: "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
   },
 ];
