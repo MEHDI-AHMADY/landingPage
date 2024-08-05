@@ -95,18 +95,21 @@ p {
     }
 
     .linkedinIcon {
+      display: inline-block;
       width: 30px;
       height: 30px;
       background: url('/images/linkedinIcon.png') no-repeat center;
     }
 
     .facebookIcon {
+      display: inline-block;
       width: 30px;
       height: 30px;
       background: url('/images/facebook.png') no-repeat center;
     }
 
     .twitterIcon {
+      display: inline-block;
       width: 30px;
       height: 30px;
       background: url('/images/twitter.png') no-repeat center;
